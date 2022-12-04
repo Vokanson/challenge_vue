@@ -1,0 +1,14 @@
+
+
+
+body {
+    background: black;
+}
+
+
+.container {
+    position: fixed;
+    margin: 0 auto;
+    width: 1024px;
+    background: coral;
+}
