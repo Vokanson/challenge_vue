@@ -12,9 +12,9 @@ const App = {
             this.inputValue = event.target.value
             console.log (inputValue)
         },
-        addNewFilm()
-        {
-
+        addNewFilm() {
+            console.log (this.inputValue)
+            alert(this.inputValue)
         }
     },
 }
