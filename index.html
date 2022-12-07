@@ -25,7 +25,10 @@
         <button class = "btn" v-on:click="addNewFilm">Поиск</button>
         <hr>
         <ul class="list">
-            <li class="list-item" ></li>
+            <li class="list-item" v-for="f in film" >
+                {{f}}
+            </li>
+
         </ul>
     </div>
 </div>
