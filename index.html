@@ -24,8 +24,11 @@
         </div>
         <button class = "btn" v-on:click="addNewFilm">Поиск</button>
         <hr>
-        <ul class="list">
-            <li class="list-item" v-for="f in film" >
+        <h2>{{nameFilm}}</h2>
+        <h3>{{titleYear}}{{yearFilm}}</h3>
+        <p>{{aboutFilm}}</p>
+        <ul class="list">Жанры:
+            <li class="list-item" v-for="f in genre" >
                 {{f}}
             </li>
 
