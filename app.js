@@ -27,14 +27,14 @@ const App = {
 
             // const genreRetApi = dat.Genre
 
-            function splitString(stringToSplit, separator) {
-                const arrayOfString = stringToSplit.split(separator);
+            // function splitString() {
+                const arrayOfString = dat.Genre.split(",");
                 console.log(arrayOfString[1])
-                this.genre[0]= arrayOfString[1]
-            }
-            // this.genre = dat.Genre
-
-            splitString(dat.Genre, ",")
+                this.genre= arrayOfString
+            // }
+            // // this.genre = dat.Genre
+            //
+            // splitString()
 
             console.log(dat.Genre)
             console.log(dat)
