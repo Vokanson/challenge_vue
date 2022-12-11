@@ -5,34 +5,45 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Поиск фильма</title>
     <link rel="stylesheet" href="theme.css">
 
 </head>
 <body>
 
 
-<div class="container" id = "app">
-    <div class="card">
+<div  class="container"   id = "app"  >
+
+
+    <div class="card" >
         <h1> {{title}}</h1>
-        <div class="form-control">
+        <div class = "style"> <div class="form-control" >
             <input type="text"
                    v-bind:placeholder="placeholderString"
                    v-bind:Value = "inputValue"
                    v-on:input="inputChangeHandler"
             >
         </div>
-        <button class = "btn" v-on:click="addNewFilm">Поиск</button>
-        <hr>
-        <h2>{{nameFilm}}</h2>
-        <h3>{{titleYear}}{{yearFilm}}</h3>
-        <p>{{aboutFilm}}</p>
-        <ul class="list">Жанры:
-            <li class="list-item" v-for="f in genre" >
-                {{f}}
-            </li>
 
-        </ul>
+            <button class = "btn"  v-on:click="addNewFilm" >Поиск</button>
+        </div>
+
+            <hr>
+        <div class = "var">
+            <h2>{{nameFilm}}{{naFilm}}</h2>
+            <h3 >{{yearFilm}}</h3>
+            <p>{{aboutFilm}}</p>
+            <ul class="list" v-if="genre.length !==0"> Жанры:
+                <li class="list-item" v-for="f in genre"  >
+                    {{f}}
+                </li>
+
+            </ul>
+                    <div>
+                        <img :src="posterURL" >
+                    </div>
+        </div>
+
     </div>
 </div>
 

@@ -3,6 +3,7 @@
 
 body {
     background: black;
+    /*background-image: url(https://m.media-amazon.com/images/M/MV5BMGU2NzRmZjUtOGUxYS00ZjdjLWEwZWItY2NlM2JhNjkxNTFmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg)*/
 }
 
 
@@ -12,3 +13,11 @@ body {
     width: 1024px;
     background: coral;
 }
+
+.style {
+    display: flex;
+    box-sizing: border-box;
+}
+/*.var {*/
+/*    display:none*/
+/*}*/
