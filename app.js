@@ -28,8 +28,10 @@ const App = {
 
             if (dat.Error === "Movie not found!") {
                 this.naFilm = "Фильм не найден!"
+                this.inputValue = ""
             }
             else{
+                this.naFilm = ""
                 this.nameFilm = dat.Title
                 this.yearFilm = "Год выхода: " + dat.Year
                 this.aboutFilm = dat.Plot
@@ -43,6 +45,7 @@ const App = {
                 console.log(res)
                 this.inputValue = ""
             }
+
 
         }
     },

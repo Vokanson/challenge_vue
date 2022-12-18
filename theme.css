@@ -2,22 +2,36 @@
 
 
 body {
-    background: black;
+
+    background: limegreen;
+
     /*background-image: url(https://m.media-amazon.com/images/M/MV5BMGU2NzRmZjUtOGUxYS00ZjdjLWEwZWItY2NlM2JhNjkxNTFmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg)*/
 }
 
 
 .container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
     position: fixed;
     margin: 0 auto;
     width: 1024px;
-    background: coral;
+    /*background: coral;*/
 }
-
 .style {
+    width: 200px;
     display: flex;
-    box-sizing: border-box;
+    text-align: center;
+     }
+@media (max-width: 1024px) {
+    .style {
+        position: fixed;
+        bottom: 0px;
+        display: flex;
+        box-sizing: border-box;
+    }
 }
-/*.var {*/
-/*    display:none*/
-/*}*/
+.list {
+    list-style-position: inside;
+    text-align: left;
+    padding-left: 400px;
+}
