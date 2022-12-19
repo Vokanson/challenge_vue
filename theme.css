@@ -9,29 +9,35 @@ body {
 }
 
 
-.container {
+.card {
     text-align: center;
     background-color: rgba(255, 255, 255, 0);
-    position: fixed;
+    position: page;
     margin: 0 auto;
-    width: 1024px;
+    min-width: 500px;
     /*background: coral;*/
 }
 .style {
-    width: 200px;
-    display: flex;
+    /*position: page;*/
+    /*width: 100%;*/
+    display: inline-flex;
     text-align: center;
      }
 @media (max-width: 1024px) {
     .style {
+        margin-left: -94px;
         position: fixed;
         bottom: 0px;
-        display: flex;
         box-sizing: border-box;
     }
 }
 .list {
     list-style-position: inside;
-    text-align: left;
-    padding-left: 400px;
+    text-align: revert;
+    /*padding-left: 400px;*/
 }
+.list-item {
+    display: block;
+    text-align: center;
+}
+
