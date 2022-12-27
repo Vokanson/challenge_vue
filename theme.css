@@ -32,6 +32,7 @@ body {
     }
 }
 .list {
+    display: inline-flex;
     list-style-position: inside;
     text-align: revert;
     /*padding-left: 400px;*/

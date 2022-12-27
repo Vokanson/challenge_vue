@@ -35,22 +35,28 @@
             <hr>
 
             <h2>{{naFilm}}</h2>
-
+            <h2>{{nameFilm}}</h2>
 
         <div class = "var" v-if='naFilm===""'>
+            
 
-            <h2>{{nameFilm}}</h2>
-            <h3 >{{yearFilm}}</h3>
-            <p>{{aboutFilm}}</p>
-            <ul class="list" v-if="genre.length !==0"> Жанры:
-                <li class="list-item" v-for="f in genre"  >
-                    {{f}}
-                </li>
-
+            <ul class="list" > {{nameFilm}}
+                                <li class="list-item" v-for="f in dat.Search"  >
+                                    {{f.Title}} {{f.Year}} <img :src=f.Poster>
+                                </li>
             </ul>
-                    <div class = 'imeg'>
-                        <img :src="posterURL" >
-                    </div>
+<!--            <h2>{{nameFilm}}</h2>-->
+<!--            <h3 >{{yearFilm}}</h3>-->
+<!--            <p>{{aboutFilm}}</p>-->
+<!--            <ul class="list" v-if="genre.length !==0"> Жанры:-->
+<!--                <li class="list-item" v-for="f in genre"  >-->
+<!--                    {{f}}-->
+<!--                </li>-->
+
+<!--            </ul>-->
+<!--                    <div class = 'imeg'>-->
+<!--                        <img :src="posterURL" >-->
+<!--                    </div>-->
         </div>
 
     </div>

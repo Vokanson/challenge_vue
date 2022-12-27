@@ -10,7 +10,8 @@ const App = {
             aboutFilm: "",
             genre: [],
             posterURL:"",
-            naFilm:""
+            naFilm:"",
+            dat:[]
 
         }
     },
@@ -24,9 +25,9 @@ const App = {
         addNewFilm: async function () {
             const films = this.inputValue
             const res = await fetch(`http://www.omdbapi.com/?apikey=922db138&s=${films}`)
-             const dat = await res.json()
-            console.log(dat)
-            console.log(dat.Search[0].Title)
+             this.dat = await res.json()
+            console.log(this.dat)
+            console.log(this.dat.Search[0].Title)
 
             if (dat.Error === "Movie not found!") {
                 this.naFilm = "Фильм не найден!"
@@ -34,7 +35,7 @@ const App = {
             }
             else{
                 this.naFilm = ""
-                this.nameFilm = dat.Search[0]
+                this.nameFilm = this.inputValue
                 console.log (dat.Search[0])
                 this.yearFilm = "Год выхода: " + dat.Year
                 this.aboutFilm = dat.Plot
